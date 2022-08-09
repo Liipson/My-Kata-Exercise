@@ -75,7 +75,6 @@ namespace Kata_Exercise
         'B' and 'g' returns 0
 
         '0' and '?' returns -1
-        */
         public static int SameCase(char a, char b)
         {
             if(!Char.IsLetter(a)||!Char.IsLetter(b)) //If either of the characters is not a letter, return -1
@@ -100,6 +99,29 @@ namespace Kata_Exercise
 
 
 
+        Given an array of integers your solution should find the smallest integer.
+        For example:
+        Given [34, 15, 88, 2] your solution will return 2
+        Given [34, -345, -1, 100] your solution will return -345
+        */
+
+        public static int FindSmallestInt(int[] args)
+        {
+            int smallestValue = args[0];
+
+            for (int i=1; i<args.Length;i++)
+            {
+                if(args[i-1]<args[i]&&args[i-1]<smallestValue)
+                {
+                    smallestValue = args[i-1];
+                }
+                else if(args[i]<args[i-1]&& args[i]<smallestValue)
+                {
+                    smallestValue = args[i];
+                }
+            }
+            return smallestValue;
+        }
 
 
 
