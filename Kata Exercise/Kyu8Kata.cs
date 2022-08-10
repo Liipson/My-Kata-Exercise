@@ -106,7 +106,7 @@ namespace Kata_Exercise
         For example:
         Given [34, 15, 88, 2] your solution will return 2
         Given [34, -345, -1, 100] your solution will return -345
-        */
+        
         public static int FindSmallestInt(int[] args)
         {
             int smallestValue = args[0];
@@ -123,6 +123,54 @@ namespace Kata_Exercise
                 }
             }
             return smallestValue;
+        }
+
+
+
+
+        --------IS HE GONNA SURVIVE--------
+
+        A hero is on his way to the castle to complete his mission.
+        However, he's been told that the castle is surrounded with a couple of powerful dragons!
+        each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. 
+        Assuming he's gonna grab a specific given number of bullets
+        and move forward to fight another specific given number of dragons, will he survive?
+        Return True if yes, False otherwise :)
+
+        public static bool Hero(int bullets, int dragons)
+        {
+            int dragonsHp = dragons * 2;
+
+            if((bullets/dragonsHp)>=1&&dragonsHp!=0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+
+
+
+        --------------KEEP HYDRATED!------------------
+        Nathan loves cycling.
+        Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+        You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+        For example:
+        time = 3 ----> litres = 1
+        time = 6.7---> litres = 3
+        time = 11.8--> litres = 5
+
+         */
+
+        public static int Litres(double time)
+        {
+            double rounded = Math.Floor(time * 0.5);
+            int res = Convert.ToInt32(rounded);
+            return res;
         }
 
 
