@@ -14,9 +14,15 @@ namespace Kata_Exercise
             Console.WriteLine(Kyu8Kata.Hero(10, 5));
             Console.WriteLine(Kyu8Kata.Litres(5));
             Console.WriteLine(Kyu8Kata.Maps(new int[] { 2,6,3,4,56})); 
-            */
+            Console.WriteLine(Kyu8Kata.SwitchItUp(5)); 
+            Console.WriteLine(Kyu7Kata.Disemvowel("I like banana"));
+            Console.WriteLine(Kyu7Kata.ValidatePin("1234"));
+            Console.WriteLine(Kyu7Kata.GenerateShape(5));
+            Console.WriteLine(Kyu8Kata.Paperwork(5, 5));
+            Console.WriteLine(Kyu7Kata.DontGiveMeFive(-10,-1));
+*/
 
-            Console.WriteLine(Kyu8Kata.SwitchItUp(5));
+            Console.WriteLine(Kyu7Kata.CountBy(2, 5));
         }
     }
 }
