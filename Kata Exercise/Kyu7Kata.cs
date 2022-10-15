@@ -128,9 +128,7 @@ namespace Kata_Exercise
         Examples
         countBy(1,10)  should return  {1,2,3,4,5,6,7,8,9,10}
         countBy(2,5)  should return {2,4,6,8,10}
-         */
-
-
+         
         public static int[] CountBy(int x, int n)
         {
             int[] z = new int[n];
@@ -146,11 +144,49 @@ namespace Kata_Exercise
 
 
 
+        Given an integer n and two other values, build an array of size n filled with these two values alternating.
+        Examples
+        5, true, false     -->  [true, false, true, false, true]
+        10, "blue", "red"  -->  ["blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red"]
+        0, "one", "two"    -->  []
+
+        public static object[] Alternate(int n, object firstValue, object secondValue)
+        {
+
+            object[] someObjects = new object[n];
+
+            if (n == 0)
+            {
+                return new object[0];
+            }
+            else
+            {
+                for (int i = 0; i< n; i++)
+                {
+                    if ((i+1) % 2 == 0)
+                    {
+                       // Console.WriteLine(i + "druga");
+                        someObjects[i] = secondValue;
+                        //Console.WriteLine(secondValue);
+                    }
+                    else
+                    {
+                        //Console.WriteLine(i + "pierwsza");
+                        someObjects[i] = firstValue;
+                       // Console.WriteLine(firstValue);
+                    }
+                }
+            }
+
+            
+            return someObjects;
+           // return new object[0];
+
+        }
 
 
 
-
-
+*/
 
 
 

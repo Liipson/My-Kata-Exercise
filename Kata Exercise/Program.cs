@@ -20,9 +20,14 @@ namespace Kata_Exercise
             Console.WriteLine(Kyu7Kata.GenerateShape(5));
             Console.WriteLine(Kyu8Kata.Paperwork(5, 5));
             Console.WriteLine(Kyu7Kata.DontGiveMeFive(-10,-1));
-*/
-
             Console.WriteLine(Kyu7Kata.CountBy(2, 5));
+
+            Console.WriteLine(Kyu7Kata.Alternate(10, "xD", "jd"));
+*/
+            Console.WriteLine(Kyu8Kata.HowMuchILoveYou(8));
+
+
+
         }
     }
 }

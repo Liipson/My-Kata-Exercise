@@ -268,7 +268,59 @@ namespace Kata_Exercise
 
         }
 
+
+
+
+
+ =====================I LOVE YOU, A LITTLE, ALOT, PASSIONATELY ... NOT AT ALL=============================
+        polecenie było za długie więc go tutaj nie wstawiam, nazwa wystarczy do wyszukania.
+        :)
+        
   */
+        public static string HowMuchILoveYou(int nb_petals)
+        {
+            string[] arr = { "I love you", "a little", "a lot", "passionately", "madly", "not at all" };
+            string result = "I dont know yet";
+            int y = 0;
+            for (int i = 0; i <nb_petals; i++)
+            { 
+                if(y>=6)
+                {
+                    y = 0;
+                }
+                y++;
+                result = arr[y-1];
+            }
+            return result;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
