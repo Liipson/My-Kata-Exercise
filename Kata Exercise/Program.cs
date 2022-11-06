@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Linq;
 
 namespace Kata_Exercise
 {
@@ -23,10 +26,13 @@ namespace Kata_Exercise
             Console.WriteLine(Kyu7Kata.CountBy(2, 5));
 
             Console.WriteLine(Kyu7Kata.Alternate(10, "xD", "jd"));
-*/
             Console.WriteLine(Kyu8Kata.HowMuchILoveYou(8));
+            Console.WriteLine(Kyu7Kata.Cats(2,5));
+*/
+            List<object> test123 = new List<object> {3,4,5,"sd",53 };
 
 
+            Console.WriteLine(Kyu7Kata.GetIntegersFromList(test123));
 
         }
     }

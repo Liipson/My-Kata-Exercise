@@ -276,7 +276,6 @@ namespace Kata_Exercise
         polecenie było za długie więc go tutaj nie wstawiam, nazwa wystarczy do wyszukania.
         :)
         
-  */
         public static string HowMuchILoveYou(int nb_petals)
         {
             string[] arr = { "I love you", "a little", "a lot", "passionately", "madly", "not at all" };
@@ -293,7 +292,7 @@ namespace Kata_Exercise
             }
             return result;
         }
-
+ */
 
 
 

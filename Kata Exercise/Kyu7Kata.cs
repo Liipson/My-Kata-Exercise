@@ -185,8 +185,52 @@ namespace Kata_Exercise
         }
 
 
+     =============================CATS AND SHELVES========================================
+        https://www.codewars.com/kata/62c93765cef6f10030dfa92b/train/csharp
 
+        Example:
+        Start 1, finish 5, then answer is 2 (1 => 4 => 5 or 1 => 2 => 5)
+
+        public static int Cats(int start, int finish)
+        {
+            int currentShelve = start;
+            int jumpScore = 0;
+
+            while (currentShelve != finish)
+            {
+                if (currentShelve + 3 <= finish)
+                {
+                    currentShelve = currentShelve + 3;
+                    jumpScore++;
+                }
+                else if (currentShelve + 1 <= finish)
+                {
+                    currentShelve = currentShelve + 1;
+                    jumpScore++;
+                }
+            }
+            return jumpScore;
+        }
 */
+
+
+        public static IEnumerable<int> GetIntegersFromList(List<object> listOfItems)
+        {
+            List<int> NewList = new List<int> { };
+            int y = 5;
+
+            for (int i = 0; i < listOfItems.Count; i++)
+            {
+                if (Object.ReferenceEquals(listOfItems[i].GetType(), y.GetType()))
+                {
+                    int fajnie = Convert.ToInt32(listOfItems[i]);
+                    NewList.Add(fajnie);
+                }
+            }
+            NewList.ForEach(Console.WriteLine);
+            return NewList;
+        }
+
 
 
 
